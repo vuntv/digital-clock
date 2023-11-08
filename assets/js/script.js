@@ -1,0 +1,42 @@
+const daysOfWeek = [
+    'sun', 'mon', 'tue',
+    'wed', 'thu', 'fri',
+    'sat'
+];
+
+const months = [
+    'January', 'February', 'March', 'April',
+    'May', 'June', 'July', 'August',
+    'September', 'October', 'November', 'December'
+];
+
+const $ = (id) => document.getElementById(id);
+const zeroPadding = (num) => String(num).padStart(2, '0');
+
+function clock() {
+    const toDate = new Date();
+
+    const hour = toDate.getHours();
+    const minute = toDate.getMinutes();
+    const second = toDate.getSeconds();
+    const am_pm = hour < 11 ? 'AM' : 'PM';
+
+    const day = toDate.getDay();
+
+    const date = toDate.getDate();
+    const month = toDate.getMonth();
+    const year = toDate.getFullYear();
+
+    $('hours').innerHTML = zeroPadding(hour);
+    $('minutes').innerHTML = zeroPadding(minute);
+    $('seconds').innerHTML = zeroPadding(second);
+    $('ampm').innerHTML = am_pm;
+
+    $('date').innerHTML = zeroPadding(date);
+    $('month').innerHTML = months[ month ];
+    $('year').innerHTML = year;
+
+    $(daysOfWeek[day]).classList.add('active');
+}
+
+setInterval(clock, 1000);
