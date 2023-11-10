@@ -37,6 +37,7 @@ function clock() {
     $('year').innerHTML = year;
 
     $(daysOfWeek[day]).classList.add('active');
+    // console.log(daysOfWeek[day]);
 }
 
 setInterval(clock, 1000);
