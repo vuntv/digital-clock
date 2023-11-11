@@ -5,22 +5,14 @@
 }
 
 /**/
-body {
-    background: #0f3854;
-    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
-    background-size: 100%;
-}
 
 .container {
-    background-color: rgb(90, 90, 189);
     color: white;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    position: relative;
-    padding: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,27 +21,45 @@ body {
 
 .clock {
     font-family: 'Share Tech Mono', monospace;
-    background-color: rgb(75, 75, 168);
-    padding: 25px;
-    text-align: center;
+    background-color: rgb(39, 39, 48);
+    display: flex;
+    border: 0.5rem solid #a59595;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
 }
 
-.days-of-week, .dates {
+.days-of-week {
     color: rgb(150, 141, 141);
-    font-size: 1.5em;
+    font-size: .8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    width: 3rem;
 }
 
 .active, .dates {
     color: #fff;
+    font-weight: 900;
 }
 
 .times {
-    font-size: 2em;
+    font-family: 'Digital-7';
+    font-size: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.dates, .times {
-    margin-top: 12px;
+#ampm {
+    font-size: 2rem;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

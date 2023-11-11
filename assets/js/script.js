@@ -27,10 +27,10 @@ function clock() {
     const month = toDate.getMonth();
     const year = toDate.getFullYear();
 
-    $('hours').innerHTML = zeroPadding(hour);
-    $('minutes').innerHTML = zeroPadding(minute);
-    $('seconds').innerHTML = zeroPadding(second);
-    $('ampm').innerHTML = am_pm;
+    $('hours').innerText= zeroPadding(hour);
+    $('minutes').innerText = zeroPadding(minute);
+    $('seconds').innerText = zeroPadding(second);
+    $('ampm').innerText = am_pm;
 
     $('date').innerHTML = zeroPadding(date);
     $('month').innerHTML = months[ month ];
