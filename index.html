@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,44 @@
     <script src="assets/js/script.js"></script>
     <title>Digital Clock</title>
 </head>
+
 <body>
     <div class="container">
         <div class="clock">
-            <div class="days-of-week">
-                <span id="sun">Sun</span>
-                <span id="mon">Mon</span>
-                <span id="tue">Tue</span>
-                <span id="wed">Wed</span>
-                <span id="thu">Thu</span>
-                <span id="fri">Fri</span>
-                <span id="sat">Sat</span>
+            <div class="left-content">
+                <div class="days-of-week">
+                    <div id="sun">Sun</div>
+                    <div id="mon">Mon</div>
+                    <div id="tue">Tue</div>
+                    <div id="wed">Wed</div>
+                    <div id="thu">Thu</div>
+                    <div id="fri">Fri</div>
+                    <div id="sat">Sat</div>
+                </div>
             </div>
-            <div class="times">
-                <span id="hours">01</span> :
-                <span id="minutes">01</span> :
-                <span id="seconds">01</span>
-                <span id="ampm">AM</span>
+            <div class="right-content">
+                <div class="times">
+                    <div id="hours">01</div>
+                    <div class="dot">:</div>
+                    <div id="minutes">01</div>
+                    <div class="dot">:</div>
+                    <div id="seconds">01</div>
+                    <div id="ampm">AM</div>
+                </div>
+                <div class="dates-description">
+                    <div>YEAR</div>
+                    <div>MONTH</div>
+                    <div>DATE</div>
+                </div>
+                <div class="dates">
+                    <div id="year">2022</div>
+                    <div id="month">Nov</div>
+                    <div id="date">08</div>
+                </div>
             </div>
-            <div class="dates">
-                <span id="year">2022</span>
-                <span id="month">Nov</span>
-                <span id="date">08</span>
-            </div>
+
         </div>
     </div>
 </body>
+
 </html>
