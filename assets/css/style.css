@@ -27,16 +27,17 @@
     border-radius: 2rem;
     user-select: none;
     padding: 0 2rem;
+    width: 600px;
 }
 
-.days-of-week {
-    color: rgb(150, 141, 141);
-    font-size: .8rem;
+.left-content {
+    color: rgb(106, 104, 104);
+    font-size: .9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: 418px;
 }
 
 .active, .dates {
@@ -44,6 +45,13 @@
     font-weight: 900;
 }
 
+/**/
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
 .times {
     font-family: 'Digital-7';
     font-size: 8rem;
@@ -51,15 +59,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 418px;
 }
 
 #ampm {
     font-size: 2rem;
 }
 
-.dates {
+.dates, .dates-description {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+}
+
+.dates-description {
+    margin-bottom: 5px;
+
+    color: antiquewhite;
 }
